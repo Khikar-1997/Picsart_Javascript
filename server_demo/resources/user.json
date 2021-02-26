@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Karlos",
+    "username": "Karlos2102",
+    "age": 20,
+    "email": "karlos.mirzakhanyan@gmail.com",
+    "phoneNumber": "093987789"
+  },
+  {
+    "id": 3,
+    "name": "la",
+    "username": "Karlos2102",
+    "age": 20,
+    "email": "karlos.mirzakhanyan@gmail.com",
+    "phoneNumber": "093987789"
+  },
+  {
+    "id": 4,
+    "name": "Karlos",
+    "username": "Karlos2102",
+    "age": 20,
+    "email": "karlos.mirzakhanyan@gmail.com",
+    "phoneNumber": "093987789"
+  }
+]
