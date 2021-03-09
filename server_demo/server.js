@@ -12,7 +12,7 @@ http.createServer(((req, res) => {
     else if(req.method === 'PUT' && req.url.startsWith(baseUrl))
         userController.updateUser(req,res,parseInt(req.url.split('/').slice(-1).pop()));
     else if (req.method === 'DELETE' && req.url.startsWith(baseUrl))
-        userController.deleteById(res,parseInt(req.url.split('/').slice(-1).pop()));
+    userController.deleteById(res,parseInt(req.url.split('/').slice(-1).pop()));
     else
         console.error('Server is not finding');
 })).listen(3000,() => {

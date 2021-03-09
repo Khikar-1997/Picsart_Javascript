@@ -3,6 +3,7 @@ const userService = require('../service/userService')
 function createUser(req,res){
     let body = ' ';
     req.on('data',chunk => {
+        console.log(chunk.toString());
         body += chunk.toString();
     });
     req.on('end',() => {
