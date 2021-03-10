@@ -1,16 +1,19 @@
 const mongoose = require('mongoose');
-const validator = require('validator');
 
-const Post = mongoose.model('Post',{
+const postSchema = new mongoose.Schema({
+    user_id: mongoose.Types.ObjectId,
     description: {
         type: String,
-        trim: true,
-        required: true
+        required: true,
+        trim: true
     },
-    completed: {
-        type: Boolean,
-        default: false
+    photo: [{}],
+    createdAt: {
+        type: Date,
+        default: Date.now
     }
 })
+
+const Post = mongoose.model('Post', postSchema);
 
 module.exports = Post;
